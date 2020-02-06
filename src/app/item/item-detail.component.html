@@ -1,0 +1,20 @@
+<ActionBar title="Details"></ActionBar>
+<FlexboxLayout flexDirection="column">
+    <FlexboxLayout class="m-15">
+        <Label class="h2" [text]="item.id + '. '"></Label>
+        <Label class="h2" [text]="item.name"></Label>
+    </FlexboxLayout>
+    <Label class="h4 m-15" [text]="item.role"></Label>
+    <Label class="h4 m-15" [text]="item.goallabel"></Label>
+    <Label class="h4 m-15" [text]="item.goal"></Label>
+
+</FlexboxLayout>
+<StackLayout>
+    <Button text="Add" [(ngModel)]="score" (tap)="buttonTap()" class="-primary -rounded-sm" style="margin-top:20% ; width: 200px;"></Button>
+    <Button text="Minus" (tap)="onDicrement()" class="-primary -rounded-sm" style="width: 200px;" *ngIf="show"></Button>
+</StackLayout>
+<GridLayout row="0" col="0" colSpan="4">
+    <ns-fourth-activity (submit)="updateInfo($event)" [name1]="item.name" [role1]="item.role"></ns-fourth-activity>
+</GridLayout>
+
+

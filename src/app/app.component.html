@@ -1,0 +1,9 @@
+<ActionBar title="Home Page"></ActionBar>
+<GridLayout>
+    <StackLayout>
+        <page-router-outlet></page-router-outlet>
+        <Button id="bdrag" [nsRouterLink]="['/drag']" text="Draggable" class="-primary -rounded-sm"></Button>
+        <Button id="bartist" [nsRouterLink]="['/artist']" text="Artist" class="-primary -rounded-sm"></Button>
+        <Button id="bsoccer" [nsRouterLink]="['/soccer']" text="Soccer Player" class="-primary -rounded-sm"></Button>
+    </StackLayout>
+</GridLayout>

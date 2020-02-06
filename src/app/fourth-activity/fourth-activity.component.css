@@ -1,0 +1,29 @@
+/* Add mobile styles for the component here.  */
+.form{
+    background-color: lightpink;
+    vertical-align: bottom;
+}
+#bartist{
+    width: 300px;
+    margin-right: 54%;
+}
+#bsoccer{
+    width: 300px;
+    margin-left: 54%;
+    margin-top: -95px;
+}
+#bsubmit{
+    width: 300px;
+    margin-right: 54%;
+    margin-top: -10px;
+}
+#bsoccer{
+    width: 300px;
+    margin-left: 54%;
+    margin-top: -95px;
+}
+#bdrag{
+    width: 300px;
+    margin-left: 54%;
+    margin-top: -95px;
+}

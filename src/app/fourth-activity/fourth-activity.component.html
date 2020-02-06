@@ -1,0 +1,12 @@
+<StackLayout class="form" row="2">
+    <StackLayout class="input-field">
+        <TextField [(ngModel)]="name1" hint="Name.."></TextField>
+    </StackLayout>
+    <StackLayout class="input-field">
+        <TextField [(ngModel)]="role1" hint="Role..."></TextField>
+    </StackLayout>
+    <Button id="bsubmit" text="Submit" (tap)="onSubmit()" class="-primary -rounded-sm"></Button>
+    <Button id="bdrag" [nsRouterLink]="['/drag']" text="Draggable" class="-primary -rounded-sm"></Button>
+    <Button id="bartist" [nsRouterLink]="['/artist']" text="Artist" class="-primary -rounded-sm"></Button>
+    <Button id="bsoccer" [nsRouterLink]="['/soccer']" text="Soccer Player" class="-primary -rounded-sm"></Button>
+</StackLayout>
